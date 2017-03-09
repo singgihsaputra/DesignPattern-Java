@@ -11,7 +11,7 @@ public class HeroCharacter implements Subject {
 
     public static final boolean ENEMEY_PASSIVE = false;
 
-    private ArrayList observerList;
+    private ArrayList<Observer> observerList;
 
     private boolean enemyAttacking;
 
