@@ -8,11 +8,12 @@ public class Main {
     public static void main(String[] args) {
         // write your code here
         HeroCharacter heroCharacter = new HeroCharacter();
-        CurrentBattleAction currentBattleAction = new CurrentBattleAction(heroCharacter);
+        CurrentBattleAction currentBattleAction = new CurrentBattleAction();
+        currentBattleAction.registerAttacker(heroCharacter);
 
-        heroCharacter.setAction(HeroCharacter.ENEMEY_PASSIVE);
-        heroCharacter.setAction(HeroCharacter.ENEMEY_ATTACK);
-        heroCharacter.setAction(HeroCharacter.ENEMEY_PASSIVE);
+        heroCharacter.setAction(HeroCharacter.ENEMY_PASSIVE);
+        heroCharacter.setAction(HeroCharacter.ENEMY_ATTACK);
+        heroCharacter.setAction(HeroCharacter.ENEMY_PASSIVE);
     }
 
 }

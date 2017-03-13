@@ -9,7 +9,7 @@ public class CurrentBattleAction implements Observer, BattleElement {
 
     private Subject character;
 
-    public CurrentBattleAction(Subject character) {
+    public void registerAttacker(Subject character) {
         this.character = character;
         character.registerObserver(this);
     }

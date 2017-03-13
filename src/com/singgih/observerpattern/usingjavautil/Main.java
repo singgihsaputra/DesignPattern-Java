@@ -10,9 +10,9 @@ public class Main {
         HeroCharacter heroCharacter = new HeroCharacter();
         CurrentBattleAction currentBattleAction = new CurrentBattleAction(heroCharacter);
 
-        heroCharacter.setAction(HeroCharacter.ENEMEY_ATTACK);
-        heroCharacter.setAction(HeroCharacter.ENEMEY_PASSIVE);
-        heroCharacter.setAction(HeroCharacter.ENEMEY_ATTACK);
+        heroCharacter.setAction(HeroCharacter.ENEMY_ATTACK);
+        heroCharacter.setAction(HeroCharacter.ENEMY_PASSIVE);
+        heroCharacter.setAction(HeroCharacter.ENEMY_ATTACK);
     }
 
 }

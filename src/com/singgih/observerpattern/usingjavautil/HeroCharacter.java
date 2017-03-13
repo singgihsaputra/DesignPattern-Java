@@ -9,16 +9,13 @@ import java.util.Observable;
 /**
  * Created by singgihrs on 3/9/17.
  */
-public class HeroCharacter extends Observable {
+public class HeroCharacter<T extends Observer> extends Observable {
 
-    public static final boolean ENEMEY_ATTACK = true;
+    public static final boolean ENEMY_ATTACK = true;
 
-    public static final boolean ENEMEY_PASSIVE = false;
+    public static final boolean ENEMY_PASSIVE = false;
 
     private boolean enemyAttacking;
-
-    public HeroCharacter() {
-    }
 
     public void actionChanged() {
         setChanged();

@@ -19,18 +19,13 @@ public class CurrentBattleAction implements Observer, BattleElement {
         character.addObserver(this);
     }
 
-
     @Override
     public void performAction() {
         System.out.println(enemeyAttacking ? "Hero perform Deffense" : "Hero perform Attack");
     }
 
     @Override
-    public void update(Observable obs, Object arg) {
-        if (obs instanceof HeroCharacter) {
-            HeroCharacter heroCharacter = (HeroCharacter) obs;
-            this.enemeyAttacking = heroCharacter.isEnemyAttacking();
-            performAction();
-        }
+    public void update(Observable o, Object arg) {
+
     }
 }
