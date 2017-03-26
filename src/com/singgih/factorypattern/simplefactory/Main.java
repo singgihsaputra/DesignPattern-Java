@@ -7,6 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
         SimpleMilkShakeFactory simpleMilkShakeFactory = new SimpleMilkShakeFactory();
+
         MilkshakeStore milkshakeStore = new MilkshakeStore(simpleMilkShakeFactory);
         milkshakeStore.orderMilkshake(SimpleMilkShakeFactory.CAPPUCINO);
         milkshakeStore.orderMilkshake(SimpleMilkShakeFactory.CHOCOLATE);
