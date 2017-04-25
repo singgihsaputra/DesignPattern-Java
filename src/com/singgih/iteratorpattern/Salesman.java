@@ -19,19 +19,19 @@ public class Salesman {
         this.truckStore = truckStore;
     }
 
-    public void printMenu() {
+    public void printBrosur() {
         Iterator motocycleStoreIterator = motocycleStore.createIterator();
         Iterator carStoreIterator = carStore.createIterator();
         Iterator truckStoreIterator = truckStore.createIterator();
         System.out.println("\nMotocycle Store : ");
-        printMenu(motocycleStoreIterator);
+        printBrosur(motocycleStoreIterator);
         System.out.println("\nCar Store : ");
-        printMenu(carStoreIterator);
+        printBrosur(carStoreIterator);
         System.out.println("\nTruck Store : ");
-        printMenu(truckStoreIterator);
+        printBrosur(truckStoreIterator);
     }
 
-    private void printMenu(Iterator iterator) {
+    private void printBrosur(Iterator iterator) {
         while (iterator.hasNext()) {
             VehicleItem vehicleItem = (VehicleItem) iterator.next();
             System.out.println(vehicleItem.getName() + " - " + vehicleItem.getType() + " - " + vehicleItem.getBrand());

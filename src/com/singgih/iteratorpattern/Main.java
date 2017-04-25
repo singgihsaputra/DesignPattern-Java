@@ -11,6 +11,6 @@ public class Main {
         TruckStore truckStore = new TruckStore();
 
         Salesman salesman = new Salesman(motocycleStore, carStore, truckStore);
-        salesman.printMenu();
+        salesman.printBrosur();
     }
 }
