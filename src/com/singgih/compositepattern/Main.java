@@ -26,6 +26,7 @@ public class Main {
         truckStore.add(new VehicleItem("Bagong", VehicleItem.MANUAL_TYPE, "Mercedes Benz"));
         truckStore.add(new VehicleItem("Fuso", VehicleItem.MANUAL_TYPE, "Mitsubishi"));
         truckStore.add(new VehicleItem("Dutro", VehicleItem.MANUAL_TYPE, "Hino"));
+        truckStore.add(carStore);
 
         Salesman salesman = new Salesman(allVehicleStore);
         salesman.printBrosur();
