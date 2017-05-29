@@ -5,7 +5,7 @@ package com.singgih.proxypattern.virtualproxy;
  */
 public class NewsProxy implements NewsContract {
 
-    boolean alreadyLoaded = false;
+    boolean alreadyLoaded;
 
     News news;
 
