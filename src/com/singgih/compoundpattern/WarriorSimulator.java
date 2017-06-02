@@ -18,7 +18,13 @@ public class WarriorSimulator {
 
         troops.add(knight);
         troops.add(troll);
-        troops.add(dragon);
+
+        Troops dragons = new Troops();
+        dragons.add(dragon);
+        dragons.add(dragon);
+
+        troops.add(dragons);
+        simulate(dragons);
 
         simulate(troops);
 
