@@ -1,6 +1,6 @@
 # Design Pattern - Java
 
-This repo is sample code implementation from all chapters presented in <i>"Head First Design Patterns"</i> book. 
+This repo is a group of sample code, implementation from all chapters presented in <i>"Head First Design Patterns"</i> book. 
 The language used in this repository is <b>Java</b>.
 
 <b>Design Pattern</b> is a general reusable solution to a commonly occurring problem within a given context in software design.
